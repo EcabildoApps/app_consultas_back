@@ -1,5 +1,5 @@
 {
-   "pro": {
+   "development": {
     "username": "APPMOVIL",
     "password": "FIFA2028",
     "database": "ECABILDO",
@@ -7,7 +7,7 @@
     "port": 1874,
     "dialect": "oracle"
   },
-  "development": {
+  "pro": {
     "username": "APPMOVIL",
     "password": "FIFA2028",
     "database": "ECABILDO",
