@@ -5,7 +5,7 @@ exports.consumo = async (req, res) => {
 
     if (!ciu) {
         return res.status(400).json({
-            message: 'Faltan datos obligatorios: ciu o imp.'
+            message: 'Faltan datos obligatorios: ciu.'
         });
     }
 
