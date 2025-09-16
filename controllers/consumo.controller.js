@@ -3,7 +3,7 @@ const db = require('../models');
 exports.consumo = async (req, res) => {
     const { ciu, imp } = req.body;
 
-    if (!ciu || !imp) {
+    if (!ciu) {
         return res.status(400).json({
             message: 'Faltan datos obligatorios: ciu o imp.'
         });

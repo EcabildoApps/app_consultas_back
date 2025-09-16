@@ -11,7 +11,7 @@ exports.login = async (req, res) => {
 
     try {
         const user = await db.sequelize.query(
-            `SELECT ciu
+            `SELECT ciu, nombres_apellidos
        FROM web_cius
        WHERE cedula_ruc = :cedula
          AND email = :email
