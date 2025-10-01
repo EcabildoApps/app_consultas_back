@@ -25,6 +25,7 @@ exports.pagos = async (req, res) => {
                 emision + interes + recargo - descuento + NVL(iva, 0) + NVL(coactiva, 0) AS "TOTAL"
             FROM web_pagos
             WHERE ciu = :ciu
+            and anio = 2025
             ORDER BY impuesto, anio DESC, mes DESC`,
             {
                 replacements: { ciu },
